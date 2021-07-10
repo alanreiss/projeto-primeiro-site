@@ -10,8 +10,8 @@ O projeto _‘primeiro site’_ tem como o intuito de colocar em prática o apre
 
 Até o momento o projeto está sendo desenvolvido utilizando as seguintes tecnologias:
 
-- HTML
-- CSS
+- HTML - Included 
+- CSS - Included 
 - JavaScript
 
 ---
