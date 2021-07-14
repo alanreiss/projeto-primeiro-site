@@ -311,6 +311,8 @@ header {
     color: rgb(56, 0, 56);
 
 }
+
+/*SECTION CONHECIMENTO*/
 .conhecimentos {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
