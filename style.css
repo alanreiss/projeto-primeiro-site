@@ -14,14 +14,33 @@
     --font-action: "Mulish", serif;
 }
 
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    z-index: 100;
+    color: whitesmoke;
+    text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.61);
+    font-family: var(--font-action);
+}
+
+.nav-cont {
+    box-sizing: border-box;
+    height: 3rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #6a3093; 
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to right, #a044ff, #6a3093);
+}
+
 .navbar {
     display: flex;
     justify-content: flex-end;
     position: fixed;
     width: 100%;
-    background: #6a3093; 
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-    background: linear-gradient(to right, #a044ff, #6a3093);
+
     z-index: 10;
     box-sizing: inherit;
     font-size: 1.4rem;
@@ -39,6 +58,7 @@
     animation: movebanner 1s 0.4s  forwards;
     letter-spacing: .1rem;
     font-size: 1.2rem;
+    gap: 1.5rem;
 }
 
 ul{
@@ -51,7 +71,7 @@ ul{
     padding-left: 1.2rem;
     color: whitesmoke;
     cursor: pointer;
-    text-decoration: none;
+    text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.61);
     transition: background .4s;
     border-radius: 5rem;
     
@@ -63,6 +83,8 @@ ul{
     border-radius: 5rem;
     text-shadow: none;
 }
+
+
 
 /*Menu Hamburguer*/
 .hamburguer {
@@ -77,8 +99,17 @@ ul{
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    display: none;
 }
 
+@media (max-width: 600px) {
+ .hamburguer{
+     display: flex;
+ }
+ .navbar {
+     display: none;
+ }
+}
 
 
 .line {
@@ -87,11 +118,12 @@ ul{
     background-color: whitesmoke;
     box-shadow: 0.1rem 0.1rem 1px #000;
     transition: transform .4s;
-    
+    border-radius: 2rem;
 }
 
 .show-menu #line1 {
     transform: rotate(45deg) translate(.3rem, .4rem);
+    border-radius: 2rem;
 }
 
 .show-menu #line2 {
@@ -101,7 +133,7 @@ ul{
 
 .show-menu #line3 {
     transform: rotate(-45deg) translate(.3rem, -.4rem);
-    
+    border-radius: 2rem;    
 }
 
 
@@ -249,12 +281,12 @@ header {
 .menu-link {
     font-family: var(--font-action);
     font-size: 2rem;
-    color: #555;
+    color: rgb(61, 61, 61);
     transition: color 1s;
 }
 
 .menu-link:hover{
-    color: purple;
+    color: #6a3093;
 }
 
 .social-media{
